@@ -81,3 +81,12 @@ npx playwright show-trace test-results/<test-directory>/trace.zip
 ## Границы проекта
 
 Это небольшая демонстрация с Chromium, синхронной SQLite и одним экземпляром приложения. Здесь нет Kubernetes, Kafka, Redis, Allure, нагрузочного тестирования или промышленного управления секретами. Не указывайте их в резюме на основании этого репозитория.
+
+## Проверка при подготовке проекта
+
+- Pytest: 18 passed.
+- Playwright Chromium: 3 passed.
+- Docker image: успешно собран.
+- `docker compose config -q`: успешно.
+- Запуск полного monitoring-стенда не завершен: дисковый лимит среды при создании контейнера Grafana. Provisioning и отображение дашборда в работающей Grafana требуют проверки.
+- GitHub Actions настроен, но удаленный запуск не проверен до публикации репозитория.
